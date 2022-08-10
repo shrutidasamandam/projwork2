@@ -8,7 +8,7 @@ if (isset($_SESSION['loggedIn']) && isset($_SESSION['name'])) {
     $loggedIn = true;
 }
 
-$conn = new mysqli('localhost','root','dvsrikanth','commentsystem',4306);
+$conn = new mysqli('localhost','root','','commentsystem',4306);
 
 function createCommentRow($data) {
     global $conn;
